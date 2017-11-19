@@ -2,6 +2,8 @@
 <ul>
   <li><b>First name:</b> <%= @contact.first_name %></li>
   <li><b>Last name:</b> <%= @contact.last_name %></li>
-  <li><b>Email:</b> <%= @contact.email %></li>
+  <li><b>Email:</b> <a href="mailto:<%= @contact.email %>"><%= @contact.email %></a></li>
   <li><b>Notes:</b> <%= @contact.note %></li>
 </ul>
+
+<a href="/contacts">Back to Contacts</a>
