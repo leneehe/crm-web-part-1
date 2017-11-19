@@ -1,0 +1,12 @@
+<h1>Contacts List</h1>
+
+<ul>
+  <% @contacts.each do |contact|%>
+  <li><b><%= contact.full_name %></b></li>
+  <li><%= contact.email %></li>
+  <li><%= contact.note %></li>
+  <hr>
+  <% end %>
+</ul>
+
+<a href="/">Back to home</a>
