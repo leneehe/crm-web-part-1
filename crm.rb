@@ -14,6 +14,11 @@ get '/about' do
   erb :about
 end
 
+get '/contacts/:id' do
+  @contact = Contact.find_by(:id => params[:id].to_i)
+  erb :show_contact
+end
+
 
 after do
   ActiveRecord::Base.connection.close
