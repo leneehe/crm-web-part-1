@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bitmaker CRM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="displayheader">
+        <h1>Bitmaker CRM</h1>
+      </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/contacts">List</a>
+        <a href="#">Add a contact</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      &copy; Bitmaker 2017
+    </footer>
+  </body>
+</html>
