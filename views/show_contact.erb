@@ -5,5 +5,11 @@
   <li><b>Email:</b> <a href="mailto:<%= @contact.email %>"><%= @contact.email %></a></li>
   <li><b>Notes:</b> <%= @contact.note %></li>
 </ul>
-
+<form action='/contacts/<%= @contact.id %>' method='post'>
+  <input type='hidden' name='_method' value='delete'>
+  <p>
+    <button><a href="/contacts/<%= @contact.id %>/edit">Edit</a></button>
+    <button type="submit">Delete Contact</button>
+  </p>
+</form>
 <a href="/contacts">Back to Contacts</a>

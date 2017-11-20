@@ -6,11 +6,16 @@
 <ul>
   <% @contacts.each do |contact|%>
   <li>
-    <b><%= contact.full_name %></b> [ <a href="mailto:<%= contact.email %>"><%= contact.email %></a> ]
+    <b><a href="/contacts/<%= contact.id %>"><%= contact.full_name %></a></b> [ <a href="mailto:<%= contact.email %>"><%= contact.email %></a> ]
     <br>
     <%= contact.note %>
     <br>
-    <small><a href="/contacts/<%= contact.id %>">Edit</a> | <a href="#">Delete</a></small>
+    <form action='/contacts/<%= contact.id %>' method='post'>
+      <input type='hidden' name='_method' value='delete'>
+    <small><a href="/contacts/<%= contact.id %>/edit">Edit</a>
+      | <button type="submit">Delete</button>
+    </small>
+    </form>
   </li>
   <% end %>
 </ul>

@@ -148,7 +148,29 @@ li a:hover {
   border-bottom: 2px solid #f44336;
 }
 
-small a{
+small a {
   color: #f44336;
   border: none !important;
+}
+
+small button, small button:hover {
+  color: #f44336;
+  background-color: transparent;
+  padding: 0;
+}
+
+li b a {
+  color: black;
+}
+
+button, button a{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 0;
+}
+button:hover, button a:hover{
+  background-color: turquoise;
+  color: white;
+  border: 0;
 }
