@@ -163,13 +163,13 @@ li b a {
   color: black;
 }
 
-button, button a{
+button {
   cursor: pointer;
   background-color: black;
   color: white;
   border: 0;
 }
-button:hover, button a:hover{
+button:hover {
   background-color: turquoise;
   color: white;
   border: 0;

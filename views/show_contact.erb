@@ -8,7 +8,7 @@
 <form action='/contacts/<%= @contact.id %>' method='post'>
   <input type='hidden' name='_method' value='delete'>
   <p>
-    <button><a href="/contacts/<%= @contact.id %>/edit">Edit</a></button>
+    <button type="button" onclick="location.href='/contacts/<%= @contact.id %>/edit';">Edit</button>
     <button type="submit">Delete Contact</button>
   </p>
 </form>
