@@ -14,6 +14,10 @@ get '/about' do
   erb :about
 end
 
+get '/contacts/new' do
+  erb :new
+end
+
 get '/contacts/:id' do
   @contact = Contact.find_by(:id => params[:id].to_i)
   if @contact
